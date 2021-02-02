@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const https = require('https');
 
 function checkStatusTrafic(type, name) {
-    let len = type.length;
+    const len = type.length;
     let normal = 0;
     let travaux = 0;
     let critical = 0;
