@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot-ratp",
+  "version": "1.0.0",
+  "description": "Bot RATP for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BliTz037/Discord-Bot-RATP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BliTz037/Discord-Bot-RATP/issues"
+  },
+  "homepage": "https://github.com/BliTz037/Discord-Bot-RATP#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0"
+  }
+}
