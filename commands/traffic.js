@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 const Discord = require('discord.js');
 const Api = require('../api');
+const Url = require('../url.json');
 
 function checkStatusTrafic(type, name, DisplayLine) {
     const len = type.length;
@@ -55,8 +56,8 @@ module.exports = {
         .setColor('#00aa91')
         .setTitle('TRAFIC RATP')
         .setURL('https://www.ratp.fr/infos-trafic')
-        .setAuthor('RATP Bot', 'https://zupimages.net/up/21/05/84vw.png', 'https://www.ratp.fr/')
-        .setThumbnail('https://www.pngfactory.net/_png/_thumb/quille-travaux_cameleonhelp_divers.png');
+        .setAuthor('RATP Bot', Url.picto.picto_ratp, 'https://www.ratp.fr/')
+        .setThumbnail(Url.picto.picto_traffic);
 
         if (args.length === 0) {
             Api.get('traffic').then((resp) => {
