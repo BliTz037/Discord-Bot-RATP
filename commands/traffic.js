@@ -61,7 +61,7 @@ module.exports = {
 
         if (args.length === 0) {
             Api.get('traffic').then((resp) => {
-                embed.addFields(checkStatusTrafic(resp.result.metros, 'Metros :metro:', false));
+                embed.addFields(checkStatusTrafic(resp.result.metros, 'Metros :metro:', true));
                 embed.addFields(checkStatusTrafic(resp.result.rers, 'RERS :train2:', true));
                 embed.addFields(checkStatusTrafic(resp.result.tramways, 'Tramways :tram:', true));
                 return msg.channel.send(embed);

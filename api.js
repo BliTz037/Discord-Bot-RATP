@@ -19,4 +19,40 @@ module.exports = {
 			});
 		});
 	},
+	checkType: function(type) {
+		if (type === 'bus') {
+			return 'bus';
+		}
+		if (['N', 'n', 'noctilien', 'noctiliens', 'busn'].includes(type)) {
+			return 'noctiliens';
+		}
+		if (['rer', 'rers'].includes(type)) {
+			return 'rers';
+		}
+		if (['metro', 'm', 'metros'].includes(type)) {
+			return 'metros';
+		}
+		if (['T', 'tramway', 'tramways', 't'].includes(type)) {
+			return 'tramways';
+		}
+		return null;
+	},
+	checkTypeweb: function(type) {
+		if (type === 'bus') {
+			return 'bus';
+		}
+		if (['N', 'n', 'noctilien', 'noctiliens', 'busn'].includes(type)) {
+			return 'noctiliens';
+		}
+		if (['rer', 'rers'].includes(type)) {
+			return 'rers';
+		}
+		if (['metro', 'm', 'metros'].includes(type)) {
+			return 'metros';
+		}
+		if (['T', 'tramway', 'tramways', 't'].includes(type)) {
+			return 'tramways';
+		}
+		return null;
+	},
 };
