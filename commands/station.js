@@ -28,7 +28,6 @@ module.exports = {
         else {
             line = args[1].toLowerCase();
         }
-        console.log("test");
         Api.get(`stations/${type}/${line}`).then((resolve) => {
             embed.setTitle(`Liste des stations du ${type} ${line}`);
             embed.setThumbnail(Url.picto[`picto_${type}`]);
