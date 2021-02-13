@@ -1,4 +1,5 @@
 const https = require('https');
+const url = require('./url.json');
 
 module.exports = {
 	get: function(request) {
@@ -21,7 +22,7 @@ module.exports = {
 	},
 	checkType: function(type) {
 		if (type === 'bus') {
-			return 'bus';
+			return 'buses';
 		}
 		if (['N', 'n', 'noctilien', 'noctiliens', 'busn'].includes(type)) {
 			return 'noctiliens';
@@ -38,20 +39,20 @@ module.exports = {
 		return null;
 	},
 	checkTypeweb: function(type) {
-		if (type === 'bus') {
-			return 'bus';
+		if (type === 'buses') {
+			return url.plan_type.buses_plan;
 		}
 		if (['N', 'n', 'noctilien', 'noctiliens', 'busn'].includes(type)) {
-			return 'noctiliens';
+			return url.plan_type.noctiliens_plan;
 		}
 		if (['rer', 'rers'].includes(type)) {
-			return 'rers';
+			return url.plan_type.rers_plan;
 		}
 		if (['metro', 'm', 'metros'].includes(type)) {
-			return 'metros';
+			return url.plan_type.metros_plan;
 		}
 		if (['T', 'tramway', 'tramways', 't'].includes(type)) {
-			return 'tramways';
+			return url.plan_type.tramways_plan;
 		}
 		return null;
 	},
