@@ -52,7 +52,7 @@ module.exports = {
             let line = null;
 
             if (type == null) {
-                return msg.reply('Correct usage:');
+                return msg.reply('Correct usage: !plan <bus|metro|tramways|noctilien|rer> <ligne>');
             }
             if (type === 'rers') {
                 line = args[1].toUpperCase();

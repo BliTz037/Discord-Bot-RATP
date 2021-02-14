@@ -26,14 +26,14 @@ client.on('message', message => {
 
     if (!command) return;
     if (command.guildOnly && message.channel.type === 'dm') {
-        return message.reply('I can\'t execute that command inside DMs!');
+        return message.reply('Erreur : Cette command ne peut pas être éxécuter en DM.');
     }
     try {
         command.execute(message, args);
     }
     catch (error) {
         console.error(error);
-        message.reply('there was an error trying to execute that command!');
+        message.reply('Erreur interne ! Réessayer plus tard.');
     }
 });
 

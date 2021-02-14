@@ -13,14 +13,17 @@ module.exports = {
         let type = null
         let line = null;
         let str = '```\n';
-        let embed = new Discord.MessageEmbed();
+        let embed = new Discord.MessageEmbed()
+        .setColor('#00aa91')
+        .setURL('https://www.ratp.fr/')
+        .setAuthor('RATP Bot', Url.picto.picto_ratp, 'https://www.ratp.fr/')
 
         if (args.length < 2) {
             return msg.reply('Erreur: Il manque des arguments');
         }
         type = Api.checkType(args[0]);
         if (type == null) {
-            return msg.reply('Correct usage:');
+            return msg.reply('Correct usage: !station <bus|metro|tramways|noctilien|rer> <ligne>');
         }
         if (type === 'rers') {
             line = args[1].toUpperCase();
