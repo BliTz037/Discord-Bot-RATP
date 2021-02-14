@@ -9,7 +9,8 @@
         "picto_tramways": "http://ferroviblog.weebly.com/uploads/2/1/1/8/21188568/6097172_orig.png",
         "picto_metros": "https://www.foncsi.org/fr/media/picto-metro.png/image",
         "picto_aeroport": "https://lareclame-scanbook.s3.amazonaws.com/parisaeroportlogorvb1460734259.jpg",
-        "picto_lapin": "https://macholand.fr/wp-content/uploads/2014/10/viewmultimediadocument-400x266.png"
+        "picto_lapin": "https://macholand.fr/wp-content/uploads/2014/10/viewmultimediadocument-400x266.png",
+        "picto_help": "https://binuxlubuntu.files.wordpress.com/2009/10/mao_rtfm_vectorize_by_cmenghi.png"
     },
     "plan": {
         "default_plan": "https://www.ratp.fr/sites/default/files/plans-lignes/Plans-essentiels/Plan-Metro.png",
